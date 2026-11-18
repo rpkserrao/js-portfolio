@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raistlin Serrao</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
   <script src="https://kit.fontawesome.com/990a7d33f9.js" crossorigin="anonymous"></script>
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
@@ -94,15 +95,15 @@
         </p>
         <div class="modal__languages">
           <figure class="modal__language">
-            <img class="modal__language--img" src="/assets/HTML5_Badge.svg" alt="">
+            <img class="modal__language--img" src="assets/HTML5_Badge.svg" alt="">
             <span class="language__name">HTML</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="/assets/css-131-722685.webp" alt="">
+            <img class="modal__language--img" src="assets/css-131-722685.webp" alt="">
             <span class="language__name">CSS</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="/assets/javascript-1-225993.webp" alt="">
+            <img class="modal__language--img" src="assets/javascript-1-225993.webp" alt="">
             <span class="language__name">JavaScript</span>
           </figure>
           <!-- <figure class="modal__language">
@@ -118,7 +119,7 @@
         <h3 class="modal__sub-title modal__sub-title--contact">
           I'm currently open to new opportunities.
         </h3>
-        <form id="contact__form" action="">
+        <form id="contact__form" onsubmit="contact(event)">
           <div class="form__item">
             <label class="form__item--label">name</label>
             <input class="input" name="user_name" type="text" required></input>
